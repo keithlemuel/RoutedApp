@@ -1,0 +1,27 @@
+<!--<ol>
+  <li *ngFor = "let student of studentCollection">
+    {{ student.num }} {{ student.firstName }} {{ student.lastName }} {{ student.prog }} {{ student.yr }}
+  </li>
+</ol>-->
+<div *ngIf="printing">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Student Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Program Enrolled</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentCollection">
+        <td>{{ student.num }}</td>
+        <td>{{ student.firstName }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.prog }}</td>
+        <td>{{ student.yr }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
